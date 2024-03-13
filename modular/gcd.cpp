@@ -41,16 +41,14 @@ int gcd(int a, int b) {
 
 int main() 
 { 
-    int a, b;
-    cout << "Enter two positive integers (a >= b) separated by a space: ";
+    int a, b, temp;
+    cout << "Enter two positive integers (a b) separated by a space: ";
     cin >> a >> b;
     cout << "Show steps? (1 yes, 0 no): ";
     cin >> steps;
 
-    if (a < b) {
-        cout << "Invalid input: a must be greater than or equal to b." << endl;
-        return 1;
-    }
+    if (a < b)
+        swap(a, b);
 
     int result = gcd(a, b);
     cout << "The GCD of " << a << " and " << b << " is: " << result << endl;
