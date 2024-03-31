@@ -6,7 +6,8 @@
 using namespace std;
 
 int main() {
-    int base, power, mod, i, num, result;
+    long long int base, power, mod, num, result;
+    int i;
     char choice;
     bool steps;
     cout << "Modular power solver\nb^p (mod m)\n";
