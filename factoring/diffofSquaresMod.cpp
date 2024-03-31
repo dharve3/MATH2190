@@ -1,6 +1,7 @@
 // diffofSquares.cpp
 // Difference of Squares
 // Preforms factoring using difference of squares method
+// WIP
 
 #include <iostream>
 #include <cmath>
