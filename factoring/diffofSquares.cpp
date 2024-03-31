@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    int num, i, result;
+    int num, i, result, f1, f2;
     double root;
 
     cout << "Enter a number (N) to factor: ";
@@ -23,4 +23,9 @@ int main() {
         break;
         }
     }
+
+    f1 = (root + i);
+    f2 = (root - i);
+    cout << "N = " << root << "^2 - " << i << "^2 = " << "(" << root << " + " << i << ")(" << root << " - " << i << ")" << endl;
+    cout << "The factors of " << num << " are: " << f1 << " and " << f2 << endl;
 }
