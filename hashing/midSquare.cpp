@@ -6,9 +6,9 @@
 using namespace std;
 
 int main() {
-    int n = 2;
+    int n = 2; // number of digits
 
-    for (int i = 10; i <= 40; i++) {
+    for (int i = 10; i <= 100; i++) {
         cout << i << ": " << i * i << endl;
     }
 }
