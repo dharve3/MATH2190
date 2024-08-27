@@ -60,12 +60,19 @@ int main() {
         cout << "Cipher: " << encrypt(text, shift);
         break;
     case '2':
+        
         cout << "Enter message to decrypt: ";
         getline(cin, text);
         cout << "Enter shift used: ";
         getline(cin, input);
-        stringstream(input) >> shift;
-        cout << "Message: " << decrypt(text, shift);
+        if (input == "all") {
+            for (int i = 1; i <= 26; ++i) {
+                cout << "Shift " << i << ": " << decrypt(text, i) << endl;
+            }
+        } else {
+            stringstream(input) >> shift;
+            cout << "Message: " << decrypt(text, shift);
+        }
         break;
     case '3':
         cout << "Exiting...\n";
